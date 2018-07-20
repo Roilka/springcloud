@@ -32,8 +32,8 @@ public class ApiGatewayApp {
 		@Override
 		public List<SwaggerResource> get() {
 			List resources = new ArrayList();
-			resources.add(swaggerResource("eureka-client", "/swagger-eureka-client/v2/api-docs", "2.0"));
-			resources.add(swaggerResource("eureka-client2", "/swagger-eureka-client2/v2/api-docs", "2.0"));
+			resources.add(swaggerResource("service-a", "/eureka-client/v2/api-docs", "2.0"));
+			resources.add(swaggerResource("service-b", "/eureka-client2/v2/api-docs", "2.0"));
 			return resources;
 		}
 
