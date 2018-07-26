@@ -12,7 +12,10 @@ zuul:
     api-b:
       path:/api-b/**
       serviceId:eureka-client2
+#  servletPath:/center/**     
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:1101/eureka/
+
+   

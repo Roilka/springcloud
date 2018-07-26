@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import com.roilka.common.utils.IPUtils;
 
 @Component
 public class GlobalPreFilter extends ZuulFilter {
@@ -21,7 +22,7 @@ public class GlobalPreFilter extends ZuulFilter {
 	public Object run() {
 		RequestContext ctx = RequestContext.getCurrentContext();
 		HttpServletRequest request = ctx.getRequest();
-		
+		log.info("当前请求的IP：",IPUtils.getIpAddr(request));
 		log.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));
 		
 		Object accessToken = request.getParameter("accessToken");
@@ -51,7 +52,7 @@ public class GlobalPreFilter extends ZuulFilter {
 	@Override
 	public boolean shouldFilter() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	/**
