@@ -16,6 +16,7 @@
   	<module>eureka-consumer-ribbon-hystrix</module>
   	<module>turbine</module>
   	<module>hystrix-dashbord</module>
+  	<module>test</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>
