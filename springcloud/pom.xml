@@ -17,6 +17,8 @@
   	<module>turbine</module>
   	<module>hystrix-dashbord</module>
   	<module>test</module>
+  	<module>api-common</module>
+  	<module>base-common</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>

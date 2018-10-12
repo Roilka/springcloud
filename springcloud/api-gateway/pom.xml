@@ -26,8 +26,18 @@
 			<version>1.7.0.RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>springcloud-common</groupId>
-			<artifactId>springcloud-common</artifactId>
+			<groupId>com.spring4all</groupId>
+			<artifactId>swagger-spring-boot-starter</artifactId>
+			<version>1.7.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>springcloud</groupId>
+			<artifactId>springcloud</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>springcloud</groupId>
+			<artifactId>api-common</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 	</dependencies>

@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.roilka.common.utils.IPUtils;
 
 @Component
 public class GlobalPreFilter extends ZuulFilter {
