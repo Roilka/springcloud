@@ -19,6 +19,7 @@
   	<module>test</module>
   	<module>api-common</module>
   	<module>base-common</module>
+      <module>api-zuul</module>
   </modules>
   <parent>
     <groupId>org.springframework.boot</groupId>

@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.roilka.common.utils.IPUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
@@ -21,7 +22,7 @@ public class GlobalPreFilter extends ZuulFilter {
 	public Object run() {
 		RequestContext ctx = RequestContext.getCurrentContext();
 		HttpServletRequest request = ctx.getRequest();
-		log.info("当前请求的IP：",IPUtils.getIpAddr(request));
+		log.info("当前请求的IP：", IPUtils.getIpAddr(request));
 		log.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));
 		
 		Object accessToken = request.getParameter("accessToken");
